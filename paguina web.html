@@ -1,0 +1,80 @@
+  
+</body<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boletin - Maximo Gómez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #484848;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #d12020;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro Escolar</h1>
+
+        <form action="/submit" method="post">
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su nombre de usuario">
+
+            <label for="institucion">Institución</label>
+            <input type="text" id="institucion" name="institucion" placeholder="Ingrese el nombre de la institución">
+
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" name="curso" placeholder="Ingrese el curso">
+
+            <label for="materias">Materias</label>
+            <input type="text" id="materias" name="materias" placeholder="Ingrese las materias">
+
+            <input type="submit" value="Registrar">
+        </form>
+
+        <div class="footer">
+            <p>¿Ya tienes una cuenta? <a href="/login">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+>
+</html>
